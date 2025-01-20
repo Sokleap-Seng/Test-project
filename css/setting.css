@@ -1,0 +1,707 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    height: 100vh;
+    background-color: #ffffff;
+    overflow-x: hidden;
+}
+
+.profile-container {
+    max-width: 800px;
+    margin: 40px auto;
+    background-color: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    overflow-x: hidden;
+}
+
+.profile-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.profile-img img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.profile-info {
+    margin-left: 20px;
+    display: flex;
+}
+.profile-info i{
+    margin-left: 430px;
+    cursor: pointer;
+}
+
+.profile-info h1 {
+    margin: 0;
+    font-size: 30px;
+}
+
+.profile-info button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.profile-container {
+    max-width: 800px;
+    margin: 40px auto;
+    background-color: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.section .field-password{
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.field, .sub-field {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+.field label, .sub-field label {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.field input[type="checkbox"], .sub-field input[type="checkbox"] {
+    width: 24px;
+    height: 24px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.field input[type="checkbox"]:hover, .sub-field input[type="checkbox"]:hover {
+    transform: scale(1.1);
+    transition: transform 0.2s ease-in-out;
+}
+
+.field-password input[type="password"] {
+    border: 1px solid #9a9999;
+    border-radius: 6px;
+    padding: 5px;
+    width: 30%;
+    margin-left: 20px;
+    position: relative;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.field-password input[type="password"]:hover {
+    border-color: #007bff;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.5);
+}
+
+
+.field button, .sub-field button {
+    padding: 12px 25px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.field button:hover, .sub-field button:hover {
+    background-color: #0056b3;
+    transform: translateY(-3px);
+}
+
+.field button:active, .sub-field button:active {
+    background-color: #003d82;
+    transform: translateY(0);
+}
+
+
+.field h3 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ff4d4d;
+    margin: 0 0 15px 0;
+    text-align: left;
+    transition: color 0.3s ease, transform 0.2s ease;
+    position: relative;
+    top: 12px;
+}
+
+.field h3:hover {
+    transform: translateX(5px);
+}
+
+hr {
+    border: none;
+    border-top: 2px solid #ddd;
+}
+.sub-field-email{
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+}
+.sub-field-email label{
+    font-size: 18px;
+    font-weight: bold;
+}
+.field-step p{
+    color: rgb(100, 100, 100);
+    font-size: 14px;
+    position: relative;
+}
+.field button{
+    font-size: 16px;
+    width: 28%;
+}
+.field-support p{
+    color: rgb(100, 100, 100);
+    font-size: 14px;
+    position: relative;
+}
+.field-delete p{
+    color: rgb(100, 100, 100);
+    font-size: 14px;
+    position: relative;
+}
+.field-mobile p{
+    color: rgb(100, 100, 100);
+    font-size: 14px;
+    position: relative;
+}
+.field-notifications{
+    font-weight: bold;
+    font-size: 20px;
+}
+.sub-field-activity p{
+    color: rgb(100, 100, 100);
+    font-size: 14px;
+    position: relative;
+}
+.sub-field-always p{
+    color: rgb(100, 100, 100);
+    font-size: 14px;
+    position: relative;
+}
+.sub-field-page p{
+    color: rgb(100, 100, 100);
+    font-size: 14px;
+    position: relative;
+}
+.sub-field-workspace p{
+    color: rgb(100, 100, 100);
+    font-size: 14px;
+    position: relative;
+}
+.sub-field-announcements p{
+    color: rgb(100, 100, 100);
+    font-size: 14px;
+    position:relative;
+}
+.sub-field button{
+    font-size: 16px;
+    width: 25%;
+}
+
+
+@supports (-webkit-appearance: none) or (-moz-appearance: none) {
+    .sub-field input[type=checkbox] {
+        --active: #275EFE;
+        --active-inner: #fff;
+        --focus: 2px rgba(39, 94, 254, .3);
+        --border: #BBC1E1;
+        --border-hover: #275EFE;
+        --background: #fff;
+        --disabled: #F6F8FF;
+        --disabled-inner: #E1E6F9;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        height: 21px;
+        outline: none;
+        display: inline-block;
+        vertical-align: top;
+        position: relative;
+        margin: 0;
+        cursor: pointer;
+        border: 1px solid var(--bc, var(--border));
+        background: var(--b, var(--background));
+        transition: background 0.3s, border-color 0.3s, box-shadow 0.2s;
+    }
+    .sub-field input[type=checkbox]:after {
+        content: "";
+        display: block;
+        left: 0;
+        top: 0;
+        position: absolute;
+        transition: transform var(--d-t, 0.3s) var(--d-t-e, ease), opacity var(--d-o, 0.2s);
+    }
+    .sub-field input[type=checkbox]:checked {
+        --b: var(--active);
+        --bc: var(--active);
+        --d-o: .3s;
+        --d-t: .6s;
+        --d-t-e: cubic-bezier(.2, .85, .32, 1.2);
+    }
+    .sub-field input[type=checkbox]:disabled {
+        --b: var(--disabled);
+        cursor: not-allowed;
+        opacity: 0.9;
+    }
+    .sub-field input[type=checkbox]:disabled:checked {
+        --b: var(--disabled-inner);
+        --bc: var(--border);
+    }
+    .sub-field input[type=checkbox]:disabled + label {
+        cursor: not-allowed;
+    }
+    .sub-field input[type=checkbox]:hover:not(:checked):not(:disabled) {
+        --bc: var(--border-hover);
+    }
+    .sub-field input[type=checkbox]:focus {
+        box-shadow: 0 0 0 var(--focus);
+    }
+    .sub-field input[type=checkbox]:not(.switch) {
+        width: 21px;
+    }
+    .sub-field input[type=checkbox]:not(.switch):after {
+        opacity: var(--o, 0);
+    }
+    .sub-field input[type=checkbox]:not(.switch):checked {
+        --o: 1;
+    }
+    .sub-field input[type=checkbox] + label {
+        display: inline-block;
+        vertical-align: middle;
+        cursor: pointer;
+        margin-left: 4px;
+    }
+  
+    .sub-field input[type=checkbox]:not(.switch) {
+        border-radius: 7px;
+    }
+    .sub-field input[type=checkbox]:not(.switch):after {
+        width: 5px;
+        height: 9px;
+        border: 2px solid var(--active-inner);
+        border-top: 0;
+        border-left: 0;
+        left: 7px;
+        top: 4px;
+        transform: rotate(var(--r, 20deg));
+    }
+    .sub-field input[type=checkbox]:not(.switch):checked {
+        --r: 43deg;
+    }
+    .sub-field input[type=checkbox].switch {
+        width: 38px;
+        border-radius: 11px;
+    }
+    .sub-field input[type=checkbox].switch:after {
+        left: 2px;
+        top: 2px;
+        border-radius: 50%;
+        width: 17px;
+        height: 17px;
+        background: var(--ab, var(--border));
+        transform: translateX(var(--x, 0));
+    }
+    .sub-field input[type=checkbox].switch:checked {
+        --ab: var(--active-inner);
+        --x: 17px;
+    }
+    .sub-field input[type=checkbox].switch:disabled:not(:checked):after {
+        opacity: 0.6;
+    }
+}
+ @media (max-width: 768px) {
+    .sidebar {
+        width: 100%;
+    }
+
+    .content {
+        margin-left: 220px;
+        margin-top: 80px;
+    }
+    .profile a { 
+        width: 30px;
+        display: inline-block;
+    }
+
+    nav {
+        width: 100%;
+    }
+
+    nav a p {
+        display: inline-block;
+    }
+
+    nav a {
+        width: 130px;
+        height: 8vh;
+        display: inline-block;
+    }
+
+    .footer {
+        width: 100%;
+        font-size: 10px;
+    }
+
+    .footer p {
+        font-size: 12px;
+    }
+
+    #app {
+        width: 600px;
+        margin-right: 300px;
+        position: relative;
+        right: 200px;
+    }
+
+    #app .profile-container {
+        margin: 0px;
+        margin-left: 28px;
+    }
+
+    #app .profile-container .myprofile {
+        font-size: 14px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #app .profile-container .profile-header {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #app .profile-container .profile-header .profile-img img {
+        width: 100px;
+        height: 11vh;
+    }
+    #app .profile-container .profile-header .profile-info h1 {
+        font-size: 16px;
+    }
+    .profile-info h1 {
+        font-size: 10px; 
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-left: 46px;
+        white-space: nowrap; 
+        text-align: center; 
+    }
+    .fa-pen {
+        display: inline-block;
+        position: relative;
+        right: 60px;
+    }
+
+    .section h2 {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+
+    hr {
+        margin: 10px 0;
+    }
+
+    .section .sub-field-email label {
+        font-size: 14px;
+    }
+
+    .section .sub-field-email p  {
+        font-size: 12px;
+    }
+
+    .section .field-password label {
+        font-size: 14px;
+    }
+
+    .section .field-password input[type=password] {
+        display: inline-block;
+    }
+    .section .field .field-step label {
+        font-size: 14px;
+        margin-right: 160px;
+    }
+
+    .section .field .field-step p {
+        font-size: 10px;
+    }
+
+    .section button {
+        font-size: 8px;
+        width: 30%;
+    }
+
+    .section .sub-field label {
+        font-size: 14px;
+    }
+
+    .section .sub-field .field-support p {
+        font-size: 10px;
+    }
+
+    .section .field .field-delete h3 {
+        font-size: 14px;
+    }
+
+    .section .field .field-delete p {
+        font-size: 10px;
+    }
+
+    .section .sub-field .field-mobile label {
+        font-size: 14px;
+    }
+
+    .section .sub-field .field-mobile p {
+        font-size: 10px;
+    }
+
+    .field-notifications label{
+        font-size: 12px;
+        margin-right: 40px;
+        font-weight: bold;
+    }
+
+    .sub-field .sub-field-activity label {
+        font-size: 14px;
+    }
+
+    .sub-field .sub-field-activity p {
+        font-size: 10px;
+    }
+
+    .sub-field .sub-field-always label {
+        font-size: 14px;
+    }
+
+    .sub-field .sub-field-always p {
+        font-size: 10px;
+    }
+
+    .sub-field .sub-field-page label {
+        font-size: 14px;
+    }
+
+    .sub-field .sub-field-page p {
+        font-size: 10px;
+    }
+
+    .sub-field .sub-field-workspace label {
+        font-size: 14px;
+    }
+
+    .sub-field .sub-field-workspace p {
+        font-size: 10px;
+    }
+
+    .sub-field .sub-field-announcements {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .sub-field .sub-field-announcements label {
+        font-size: 14px;
+    }
+
+    .sub-field .sub-field-announcements p {
+        display: inline-block;
+    }
+
+    .sub-field .button {
+        width: 60%;
+        font-size: 10px;
+        height: 8vh;
+        margin-top: 30px;
+    }
+
+    .sub-field input[type=checkbox] {
+        display: inline-block;
+    }
+}
+
+@media (max-width: 400px) {
+    .sidebar {
+        width: 100%;
+        height: 170vh;
+    }
+
+    .content {
+        margin: 0;
+        padding: 10px;
+        top: 30px;
+    }
+    .profile a{ 
+        width: 20px;
+        display: none;
+    }
+    nav{
+        width: 100px;
+    }
+    nav a{
+        width: 110px;
+    }
+    .footer{
+        width: 100%;
+        font-size: 3px;
+    }
+    .footer p{
+        font-size: 7px;
+    }
+
+    #app{
+        width: 500px;
+        margin-right: 800px;
+    }
+    #app .profile-container{
+        margin: 0;
+    }
+    #app .profile-container .myprofile{
+        font-size: 8px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #app .profile-container .profile-header{
+        display: flex;
+        flex-direction: column;
+    }
+    #app .profile-container .profile-header .profile-img img {
+        width: 50px;
+        height: 8vh;
+
+    }
+    #app .profile-container .profile-header .profile-info{
+        width: 100%;    
+    }
+    .profile-info h1{
+        font-size: 10px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-right: 30px;
+    }   
+    .fa-pen{
+        display: none;
+    }
+    .section h2{
+        font-size: 12px;
+        margin-bottom: 5px;
+    }
+    hr{
+        margin: 0;
+        padding: 0;
+        margin-bottom: 5px;
+    }
+    .section .sub-field-email label{
+        font-size: 8px;
+    }
+    .section .sub-field-email p{
+        font-size: 10px;
+    }
+    .section .field-password label{
+        font-size: 12px;
+    }
+    .section .field-password input[type=password]{
+        display: none;
+       
+    }
+    .section .field{
+        font-size: 12px;
+        display: flex;
+        flex-direction: column;
+    }
+    .section .field .field-step label{
+        font-size: 12px;
+    }
+    .section .field .field-step p{
+        font-size: 8px;
+    }
+    .section button{
+        font-size: 8px;
+        width: 90%;   
+    }
+    .section .sub-field label{
+        font-size: 12px;
+    }
+    .section .sub-field .field-support p{
+        font-size: 8px;
+    }
+    .section .field .field-delete h3{
+        font-size: 12px;
+    }
+    .section .field .field-delete p{
+        font-size: 8px;
+    }
+    .section .sub-field .field-mobile label{
+        font-size: 12px;
+    }
+    .section .sub-field .field-mobile p{
+        font-size: 8px;
+    }
+    .field-notifications label{
+        font-size: 12px;
+        margin-right: 40px;
+        font-weight: bold;
+    }
+    .sub-field .sub-field-activity label{
+        font-size: 12px;
+    }
+    .sub-field .sub-field-activity p{
+        font-size: 8px;
+    }
+    .sub-field .sub-field-always label{
+        font-size: 12px;
+    }
+    .sub-field .sub-field-always p{
+        font-size: 8px;
+    } 
+    .sub-field .sub-field-page label{
+        font-size: 12px;
+    }
+    .sub-field .sub-field-page p{
+        font-size: 8px;
+    }
+    .sub-field .sub-field-workspace label{
+        font-size: 12px;
+    }
+    .sub-field .sub-field-workspace p{
+        font-size: 8px;
+    }
+    .sub-field .sub-field-announcements{
+        display: flex;
+        flex-direction: column;
+    }
+    .sub-field .sub-field-announcements label{
+        font-style: 12px;
+    }
+    .sub-field .sub-field-announcements p{
+        display: none;
+    }
+    .sub-field .button{
+        width: 100%;
+        font-size: 6px;
+        height: 8vh;
+        margin-top: 20px;
+    }
+   .sub-field input[type=checkbox]{
+       display: none;
+   }
+}
