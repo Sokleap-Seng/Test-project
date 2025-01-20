@@ -3,151 +3,167 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Setting</title>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="/css/note.css">
-    <link rel="stylesheet" href="/css/setting.css">
-    <script src="/js/setting.js" defer></script>
+     <!-- Include Font Awesome -->
+     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <title>Note Taker</title>
+    <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-    <div class="sidebar">
-        <div class="profile">
-            <img class="king-image" src="/image/Logo-image.png" alt="Profile Image">
-            <a href="#">Note Taker</a>
+    <!-- Navbar-List -->
+    <div class="navbar">
+        <img src="/image/Logo-image.png" alt="Logo" class="logo">
+        <h3 class="title">Note Taker</h3>
+        <ul class="list">av
+            <li class="main-list">
+                <!-- Button-login -->
+                <button class="btn-17">
+                  <span class="text-container">
+                     <a href="/page/login.html">Log in</a>
+                  </span>
+                </button>
+            </li>
+            <li class="main-list">
+                <button class="btn-17">
+                  <span class="text-container">
+                     <a href="/page/note.html">Get for a free</a>
+                  </span>
+                </button>
+            </li>
+        </ul>
+    </div>
+     <!-- Hero Section -->
+     <div class="hero">
+        <div class="hero-text">
+            <!-- Heading-Text -->
+            <h1>Smart <span>Note-Taker</span> for Everyone</h1>
+            <p>Note Taker helps you organize your thoughts, manage tasks, and keep all your ideas in one place.</p>
+            <div class="button-good-way">
+                <a class="fancy" href="/page/note.html">
+                    <span class="top-key"></span>
+                    <span class="text">Get for Free</span>
+                    <span class="bottom-key-1"></span>
+                    <span class="bottom-key-2"></span>
+                </a>
+                <a class="fancy" href="/page/login.html">
+                    <span class="top-key"></span>
+                    <span class="text">Create Account</span>
+                    <span class="bottom-key-1"></span>
+                    <span class="bottom-key-2"></span>
+                </a>
+            </div>
         </div>
-        <nav>
-            <a href="/page/note.html"><i class="fas fa-home"></i><p>Home</p></a>
-            <a href="/page/inbox.html"><i class="fas fa-inbox"></i><p>Inbox</p></a>
-            <a href="/page/setting.html" class="active"><i class="fas fa-cog"></i><p>Settings</p></a>
-            <a href="/page/help.html"><i class="fas fa-question-circle"></i><p>Help</p></a>
-        </nav>
-        <div class="footer">
-            <p>&copy; Note Taker App</p>
+        <!-- image-Related -->
+        <div class="hero-image">
+            <img src="/image/Header-strong.png" alt="Note-taking setup">
         </div>
     </div>
-    <div id="app">
-        <div class="profile-container">
-            <div class="myprofile">
-                <h1>My profile</h1>
-            </div>
-            <hr>
-            <div class="profile-header">
-                <div class="profile-img">
-                    <img src="/image/Sokleap.jpg" alt="Profile Image">
-                </div>
-                <div class="profile-info" >
-                    <h1>Sokleap SENG</h1>
-                    <i class="fa-solid fa-pen"></i>
-                </div>
-            </div>
-    
-            <div class="section">
-                <h2>Account security</h2>
-                <hr>
+    <hr>
+    <!-- Main Point Section -->
+    <div class="main-point">
+        <img src="/image/Negative-Health-Effects-of-Compulsive-Work-Addiction.jpg" class="active" alt="Image 1">
+        <img src="/image/Image-build with Us.webp" alt="Image 2">
+        <img src="/image/63fed6d3417d5fce7ccd4533f4ef7d2c.png" alt="Image 3">
 
-                <div class="sub-field">
-                    <div class="sub-field-email">
-                        <label>Email</label>
-                        <br>
-                        <p id="sub-email" class="workspace-description">Username@gmail.com</p>
-                        <p id="field-email" style="display: none;">Sokleap.SENG@gmail.com</p>
+        <img src="/image/Builld with us 2.png" alt="Image 5">
+        <img src="/image/Builld with us 2.png" alt="Image 6">
+        <!-- main-button icon -->
+        <div>
+            <button onclick="showImage(0)">
+                <i class="fas fa-sticky-note"></i> Note
+            </button>
+            <button onclick="showImage(1)">
+                <i class="fas fa-file-alt"></i> Docs
+            </button>
+            <button onclick="showImage(2)">
+                <i class="fas fa-tasks"></i> Project
+            </button>
+            <button onclick="showImage(3)">
+                <i class="fas fa-globe"></i> Sites
+            </button>
+            <button onclick="showImage(4)">
+                <i class="fas fa-bullseye"></i> Goal
+            </button>
+        </div>
+    </div>
+    <hr>
+    <!-- main Our Teams -->
+    <section class="our-team">
+        <h2 class="title">Our Team</h2>
+        <div class="container">
+            <div class="slider-wrapper swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide team">
+                        <img src="/image/Sokleap.jpg" alt="User" class="user-image">
+                        <h3 class="name">Sokleap Seng</h3>
                     </div>
-                    <input id="email" type="checkbox" class="switch">
-                </div>
-
-                <div class="field-password">
-                    <label>Password</label>
-                    <input  type="password" value="***********" disabled>
-                </div>
-                <div class="field">
-                    <div class="field-step">
-                        <label>2-Step Verification</label>
-                        <p>Add an additional layer of security to your account during login</p>
+                    <div class="swiper-slide team">
+                        <img src="/image/Vanda-Leng.jpg" alt="User" class="user-image">
+                        <h3 class="name">Vanda Leng</h3>
                     </div>
-                    <button>Add verification method</button>
-                </div>
-            </div>
-    
-            <div class="section">
-                <h2>Support</h2>
-                <hr>
-                <div class="sub-field">
-                    <div class="field-support">
-                        <label>Support access</label>
-                        <p id="support-text" class="workspace-description">Support temporary access to your account so we can troubleshoot problems.</p>
-                        <p id="support-details" style="display: none;">You have access to your account for support purposes.</p>
+                    <div class="swiper-slide team">
+                        <img src="/image/CHhin-Sor.jpg" alt="User" class="user-image">
+                        <h3 class="name">Sor Chhin</h3>
                     </div>
-                    <input id="s1-14" type="checkbox" class="switch">
-                </div>
-                <div class="field">
-                    <div class="field-delete">
-                        <h3>Delete account</h3>
-                        <p>Permanently delete the account and remove access from all workspace</p>
+                    <div class="swiper-slide team">
+                        <img src="/image/MengHeang.jpg" alt="User" class="user-image">
+                        <h3 class="name">Mengheang Coach</h3>
                     </div>
                 </div>
-            </div>
-    
-            <div class="section">
-                <h2>My notification</h2>
-                <hr>
-                <div class="sub-field">
-                    <div class="field-mobile">
-                        <label>Mobile push notifications</label>
-                        <p id="field" class="workspace-description">Mobile push notifications</p>
-                        <p id="mobile" style="display: none;">Receive push notifications on mentions and comments via your mobile app.</p>
-                    </div>
-                    <input id="s1" type="checkbox" class="switch">
-                </div>
-                
-                <div class="field-notifications">
-                    <label>Email notifications</label>
-                </div>
-                <hr>
-                <div class="sub-field">
-                    <div class="sub-field-activity">
-                        <label>Activity in your workspace</label>
-                        <p id="activities" class="workspace-description" >Activity in workspace</p>
-                        <p id="activity" style="display: none;" >Receive emails when you get comments, mentions, page invites, reminders, access requests, and property changes.</p>
-                    </div>
-                    <input id="act" type="checkbox" class="switch">
-                </div>
-                
-                <div class="sub-field">
-                    <div class="sub-field-always">
-                        <label>Always send email notifications</label>
-                        <p id="sub-always" class="workspace-description" >Always send email</p>
-                        <p id="field-always" style="display: none;">Receive emails about activity in your workspace, even when you're active on the app.</p>
-                    </div>
-                    <input id="always" type="checkbox" class="switch">
-                </div>
-
-                <div class="sub-field">
-                    <div class="sub-field-page">
-                        <label>Page updates</label>
-                        <p id="sub-update" class="workspace-description" >Update</p>
-                        <p id="field-page" style="display: none;" >Receive email digests for changes to pages you're subscribed to.</p>
-                    </div>
-                    <input id="page" type="checkbox" class="switch">
-                </div>
-
-                <div class="sub-field">
-                    <div class="sub-field-workspace">
-                        <label>Workspace digest</label>
-                        <p id="sub-workspace" class="workspace-description">Workspace digest</p>
-                        <p id="field-space" style="display: none;" >Receive email digests of what's happening in your workspace.</p>
-                    </div>
-                    <input id="space" type="checkbox" class="switch">
-                </div>
-                
-                <div class="sub-field">
-                    <div class="sub-field-announcements">
-                        <label>Announcements and update emails</label>
-                        <p>Receive occasional emails about product launches and new features from Notion Manage settings.</p>
-                    </div>
-                    <button class="button">Manage Settings</button>
-                </div>
+           
             </div>
         </div>
-    </div> 
+    </section>
+    <!-- main-footer -->
+    <footer>
+        <div class="footer-logo">
+            <img src="/image/Logo-image.png" alt="Logo">
+            <div class="social-icons">
+                <a href="#"><img src="/image/Instagram.png" alt=""></a>
+                <a href="#"><img src="/image/linkedin.png" alt=""></a>
+                <a href="#"><img src="/image/FaceB.jpg" alt=""></a>
+                <a href="#"><img src="/image/Youtube.png" alt=""></a>
+            </div>
+        </div>
+        <div class="footer-section">
+            <h2>Company</h2>
+            <ul>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Career</a></li>
+                <li><a href="#">Security</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h2>Download</h2>
+            <ul>
+                <li><a href="#">IOS & Android</a></li>
+                <li><a href="#">Mac & Windows</a></li>
+                <li><a href="#">Linux</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h2>Note for</h2>
+            <ul>
+                <li><a href="#">Enterprise</a></li>
+                <li><a href="#">Small business</a></li>
+                <li><a href="#">Personal</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h2>Resources</h2>
+            <ul>
+                <li><a href="#">Community</a></li>
+                <li><a href="#">Templates</a></li>
+                <li><a href="#">Pricing</a></li>
+            </ul>
+        </div>
+        <div class="copyright">
+            &copy; Group5. Copyright 2025 - Student-WEB-A
+        </div>
+    </footer>
+   
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>
